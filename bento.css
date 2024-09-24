@@ -1,0 +1,20 @@
+body {
+  min-height: 800px;
+  border: 8px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    " box1 box2 box3 box4"
+    "box1 box5 box5 box4"
+    "box6 box5 box5 box7 "
+    "box8 box8 box9 box7";
+  gap: 10px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  font-size: 40pt;
+}
